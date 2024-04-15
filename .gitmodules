@@ -1,0 +1,3 @@
+[submodule "fiap-postech-ms-catalogo"]
+	path = fiap-postech-ms-catalogo
+	url = git@github.com:mariosmello/fiap-postech-ms-catalogo.git
