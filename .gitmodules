@@ -1,3 +1,6 @@
 [submodule "fiap-postech-ms-catalogo"]
 	path = fiap-postech-ms-catalogo
 	url = git@github.com:mariosmello/fiap-postech-ms-catalogo.git
+[submodule "fiap-postech-ms-identidade"]
+	path = fiap-postech-ms-identidade
+	url = git@github.com:mariosmello/fiap-postech-ms-identidade.git
