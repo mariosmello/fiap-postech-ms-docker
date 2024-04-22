@@ -4,3 +4,6 @@
 [submodule "fiap-postech-ms-identidade"]
 	path = fiap-postech-ms-identidade
 	url = git@github.com:mariosmello/fiap-postech-ms-identidade.git
+[submodule "fiap-postech-ms-pedido"]
+	path = fiap-postech-ms-pedido
+	url = git@github.com:mariosmello/fiap-postech-ms-pedido.git
