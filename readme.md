@@ -1,0 +1,9 @@
+- [X] Criar serviço de identidade
+- [X] Criar serviço de catálogo
+- [X] Criar serviço de pedido
+- [X] Configurar Github action para testes
+- [X] Configurar Github action com SonarCloud
+- [ ] Criar serviço de pedido
+- [ ] Criar serviço de produção
+- [ ] Criar integração entre pedido e produção via mensageria
+- [ ] Criar integração entre pagamento e produção/pedido via mensageria
