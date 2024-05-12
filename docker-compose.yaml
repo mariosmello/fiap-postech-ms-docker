@@ -27,6 +27,13 @@ services:
       - ./docker/mongodb/data:/data/db
     networks:
       - backend
+  redis:
+    image: redis:4.0
+    container_name: redis
+    ports:
+      - "6382:6379"
+    networks:
+      - backend
   app-id:
     build:
       context: ./fiap-postech-ms-identidade
@@ -42,6 +49,7 @@ services:
       - "DB_HOST=db"
     depends_on:
       - db
+      - redis
   app-catalogo:
     build:
       context: ./fiap-postech-ms-catalogo
@@ -57,6 +65,7 @@ services:
       - "DB_HOST=db"
     depends_on:
       - db
+      - redis
   app-pedido:
     build:
       context: ./fiap-postech-ms-pedido
@@ -68,6 +77,9 @@ services:
       - 8082:80
     networks:
       - backend
+    depends_on:
+      - mongo
+      - redis
   app-pagamento:
     build:
       context: ./fiap-postech-ms-pagamento
@@ -79,10 +91,6 @@ services:
       - 8083:80
     networks:
       - backend
-  redis:
-    image: redis:4.0
-    container_name: redis
-    ports:
-      - "6382:6379"
-    networks:
-      - backend
+    depends_on:
+      - mongo
+      - redis
