@@ -94,3 +94,17 @@ services:
     depends_on:
       - mongo
       - redis
+  app-producao:
+    build:
+      context: ./fiap-postech-ms-producao
+    volumes:
+      - ./fiap-postech-ms-producao:/var/www/html
+      - ./fiap-postech-ms-producao/docker/php/conf.d/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./fiap-postech-ms-producao/docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    ports:
+      - 8084:80
+    networks:
+      - backend
+    depends_on:
+      - mongo
+      - redis

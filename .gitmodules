@@ -10,3 +10,6 @@
 [submodule "fiap-postech-ms-pagamento"]
 	path = fiap-postech-ms-pagamento
 	url = git@github.com:mariosmello/fiap-postech-ms-pagamento.git
+[submodule "fiap-postech-ms-producao"]
+	path = fiap-postech-ms-producao
+	url = git@github.com:mariosmello/fiap-postech-ms-producao.git
